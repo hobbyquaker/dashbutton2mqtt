@@ -1,6 +1,6 @@
 {
   "name": "dashbutton2mqtt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Publish dash button presses to a MQTT broker",
   "bin": "./index.js",
   "preferGlobal": true,
@@ -15,7 +15,6 @@
     "node-dash-button": "^0.5.5",
     "yalm": "^4.0.2",
     "yargs": "^5.0.0",
-    "pcap": "git+https://github.com/mranney/node_pcap.git",
-    "underscore": "^1.8.3"
+    "pcap": "git+https://github.com/mranney/node_pcap.git"
   }
 }

@@ -3,7 +3,7 @@
 var pkg =       require('./package.json');
 var config =    require('./config.js');
 var log =       require('yalm');
-var dash_button = require('node-dash-button');
+
 
 log.setLevel(config.verbosity);
 
@@ -13,6 +13,7 @@ log.info(pkg.name + ' ' + pkg.version + ' starting');
 if (config.scan) {
 
     process.env.NODE_ENV = 'test';
+    var dash_button = require('node-dash-button');
 
     var int_array_to_hex = dash_button.int_array_to_hex;
     var create_session = dash_button.create_session;
@@ -43,6 +44,7 @@ if (config.scan) {
 
 } else {
 
+    var dash_button = require('node-dash-button');
     var Mqtt =      require('mqtt');
 
     log.info('mqtt trying to connect', config.url);
