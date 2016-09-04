@@ -34,8 +34,7 @@ Example:
 ```javascript
 {
     "50:f5:da:60:20:10": {
-        "topic": "dashbutton/foo",
-        "payload": "press"
+        "topic": "dashbutton/foo"
     },
     "50:f5:da:60:20:11": {
         "topic": "dashbutton/bar",
@@ -44,6 +43,8 @@ Example:
 }
 
 ```
+
+If you omit the payload attribute an empty string will be published.
 
 #### Start 
 
