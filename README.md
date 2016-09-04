@@ -10,7 +10,13 @@ Based on [node-dash-button](https://github.com/hortinstein/node-dash-button) by 
 
 ## Getting started
 
-Tested on macOS and Linux. If you're running on Linux you have to install libcap-dev.
+Tested on macOS and Linux. If you're running on Linux you have to install libpcap-dev:
+```
+# Ubuntu and Debian
+sudo apt-get install libpcap-dev
+# Fedora and CentOS
+sudo yum install libpcap-devel
+```
 
 #### Install
 
@@ -22,7 +28,7 @@ Tested on macOS and Linux. If you're running on Linux you have to install libcap
 
 #### Create a JSON mapping file
 
-Create a JSON file that maps dash button mac addresses to MQTT topics an payloads. 
+Create a JSON file that maps dash button mac addresses to MQTT topics and payloads. 
 
 Example:
 ```javascript
