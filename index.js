@@ -17,6 +17,10 @@ if (config.scan) {
     const intArrayToHex = dashButton.int_array_to_hex;
     const createSession = dashButton.create_session;
     const manufacturerDirectory = require('./node_modules/node-dash-button/stor.js').manufacturer_directory;
+
+    // ...
+    manufacturerDirectory.B47C9C = 'Amazon Technologies Inc.';
+
     const pcap = require('pcap');
     let arpInterface;
     if (config.interface) {
@@ -35,7 +39,7 @@ if (config.scan) {
             if (manufacturerDirectory[mac] === 'Amazon Technologies Inc.') {
                 log.info('Possible dash hardware address detected: ', possibleDash, '  Manufacturer: ', manufacturerDirectory[mac]);
             } else {
-                log.debug('Possible dash hardware address detected: ', possibleDash, '  Manufacturer: ', manufacturerDirectory[mac]);
+                log.debug('Hardware address detected: ', possibleDash, '  Manufacturer: ', manufacturerDirectory[mac]);
             }
         }
     });
