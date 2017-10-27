@@ -6,15 +6,21 @@
   "preferGlobal": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "author": "Sebastian Raff (https://github.com/hobbyquaker)",
   "license": "MIT",
   "dependencies": {
-    "mqtt": "^1.14.1",
-    "node-dash-button": "^0.5.5",
-    "yalm": "^4.0.2",
-    "yargs": "^5.0.0",
-    "pcap": "git+https://github.com/mranney/node_pcap.git"
+    "mqtt": "^2.13.1",
+    "node-dash-button": "^0.6.1",
+    "yalm": "^4.1.0",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "camo-purge": "latest",
+    "xo": "latest"
+  },
+  "xo": {
+    "space": 4
   }
 }
