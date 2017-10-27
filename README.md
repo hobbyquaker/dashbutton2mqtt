@@ -59,7 +59,7 @@ If you omit the payload attribute an empty string will be published.
 `$ sudo dashbutton2mqtt -m /path/to/mapping.json`
 
 
-#### Caveats
+## Caveats
 
 * Since node-dash-button uses libpcap to scan for dash button arp packets this tool must be run with superuser.
 * Due to the nature of the dash buttons there will be a latency of ~4 seconds between a button press and the MQTT 
@@ -67,17 +67,40 @@ publish.
 * As long as the LED of the dash button is blinking you can't do further button presses.
 
 
-#### Run as service
+## Command line options
+
+``` 
+Usage: dashbutton2mqtt [options]
+
+Options:
+  -v, --verbosity  possible values: "error", "warn", "info", "debug"
+                                                               [default: "info"]
+  -s, --scan       scan for dash buttons
+  -m, --mapping    json file containing dashbutton-mqtt mappings (see Readme)
+         [default: "/Users/basti/WebstormProjects/dashbutton2mqtt/example.json"]
+  -n, --name       instance name. used as mqtt client id and as prefix for
+                   connection topic                      [default: "dashbutton"]
+  -u, --url        mqtt broker url. See
+                   https://github.com/mqttjs/MQTT.js#connect-using-a-url
+                                                   [default: "mqtt://127.0.0.1"]
+  -i, --interface  bind to network interface to listen for dash button presses
+                                                                 [default: null]
+  -h, --help       Show help                                           [boolean]
+  --version        Show version number                                 [boolean]
+  -t, --timeout                                                  [default: 5000]
+```
+
+## Run as service
 
 I suggest [PM2](https://github.com/Unitech/pm2) to run dashbutton2mqtt in the background and start on system boot.
 
 
-# Contributions
+## Contributions
   
-Pull requests welcome!
+Pull requests welcome! 😀
 
 
-# License
+## License
 
 MIT © [Sebastian Raff](https://github.com/hobbyquaker)
 
