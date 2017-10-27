@@ -62,6 +62,7 @@ If you omit the payload attribute an empty string will be published.
 ## Caveats
 
 * Since node-dash-button uses libpcap to scan for dash button arp packets this tool must be run with superuser.
+* This tool has to be executed on a host that is connected to the same wifi network as the dash buttons.
 * Due to the nature of the dash buttons there will be a latency of ~4 seconds between a button press and the MQTT 
 publish.
 * As long as the LED of the dash button is blinking you can't do further button presses.
