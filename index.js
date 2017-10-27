@@ -82,7 +82,7 @@ if (config.scan) {
 
     log.debug('listening for', buttons);
 
-    const dash = dashButton(buttons, config.interface, config.timeout);
+    const dash = dashButton(buttons, config.interface, config.timeout, config.protocol);
 
     dash.on('detected', dashId => {
         log.debug('dash <', dashId);

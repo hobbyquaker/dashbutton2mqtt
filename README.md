@@ -54,6 +54,7 @@ Example:
 
 If you omit the payload attribute an empty string will be published.
 
+
 #### Start 
 
 `$ sudo dashbutton2mqtt -m /path/to/mapping.json`
@@ -90,7 +91,7 @@ Options:
                                                                [default: "info"]
   -s, --scan       scan for dash buttons
   -m, --mapping    json file containing dashbutton-mqtt mappings (see Readme)
-                                                       [default: "example.json"]
+         [default: "/Users/basti/WebstormProjects/dashbutton2mqtt/example.json"]
   -n, --name       instance name. used as mqtt client id and as prefix for
                    connection topic                      [default: "dashbutton"]
   -u, --url        mqtt broker url. See
@@ -98,9 +99,11 @@ Options:
                                                    [default: "mqtt://127.0.0.1"]
   -i, --interface  bind to network interface to listen for dash button presses
                                                                  [default: null]
+  -p, --protocol   protocol to use for button detection. possible values: "arp",
+                   "udp", "all"                                 [default: "all"]
+  -t, --timeout    timeout between button presses.               [default: 5000]
   -h, --help       Show help                                           [boolean]
   --version        Show version number                                 [boolean]
-  -t, --timeout                                                  [default: 5000]
 ```
 
 ## Run as service
