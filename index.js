@@ -68,7 +68,13 @@ if (config.scan) {
     });
 
     mqtt.on('error', err => {
-        log.error('mqtt', err);
+        log.error('mqtt error', err && err.message);
+    });
+    mqtt.on('close', err => {
+        log.error('mqtt close', err && err.message);
+    });
+    mqtt.on('offline', err => {
+        log.error('mqtt offline', err && err.messagex);
     });
 
     const mapping = require(config.mapping);
