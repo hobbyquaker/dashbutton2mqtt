@@ -74,6 +74,12 @@ By default this tool binds to the first network interface. To bind to a specific
 of the interface with the `--interface` option.
 
 
+## Adjusting the Timeout 
+
+If multiple presses are detected you can increase the timeout between presses. Default is 5000ms, depending on your
+network this may not be enough, you can set a higher timeout with the `--timeout` option.
+
+
 ## Command line options
 
 ``` 
