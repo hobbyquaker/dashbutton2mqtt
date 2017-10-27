@@ -1,5 +1,9 @@
 {
   "50:f5:da:60:20:10": {
     "topic": "dashbutton/foo"
+  },
+  "b4:7c:9c:22:d8:a7": {
+    "topic": "dashbutton/bar",
+    "payload": "true"
   }
 }
