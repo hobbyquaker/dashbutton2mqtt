@@ -1,6 +1,6 @@
-var pkg = require('./package.json');
-var config = require('yargs')
-    .usage(pkg.name + ' ' + pkg.version + '\n' + pkg.description + '\n\nUsage: $0 [options]')
+const path = require('path');
+const config = require('yargs')
+    .usage('Usage: $0 [options]')
     .describe('v', 'possible values: "error", "warn", "info", "debug"')
     .describe('s', 'scan for dash buttons')
     .describe('m', 'json file containing dashbutton-mqtt mappings (see Readme)')
@@ -9,26 +9,26 @@ var config = require('yargs')
     .describe('i', 'bind to network interface to listen for dash button presses')
     .describe('h', 'show help')
     .alias({
-        'h': 'help',
-        'n': 'name',
-        'm': 'mapping',
-        'u': 'url',
-        's': 'scan',
-        'v': 'verbosity',
-        'i': 'interface',
-        't': 'timeout'
+        h: 'help',
+        n: 'name',
+        m: 'mapping',
+        u: 'url',
+        s: 'scan',
+        v: 'verbosity',
+        i: 'interface',
+        t: 'timeout'
     })
     .default({
-        'u': 'mqtt://127.0.0.1',
-        'n': 'dashbutton',
-        'v': 'info',
-        'm': __dirname + '/example.json',
-        'i': null,
-        't': 5000
+        u: 'mqtt://127.0.0.1',
+        n: 'dashbutton',
+        v: 'info',
+        m: path.join(__dirname, '/example.json'),
+        i: null,
+        t: 5000
     })
-    //.config('config')
-    .version(pkg.version)
-    .help('help')
+    // .config('config')
+    .version()
+    .help()
     .argv;
 
 module.exports = config;
