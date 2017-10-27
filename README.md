@@ -6,7 +6,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License][mit-badge]][mit-url]
 
-> Publish on MQTT when a dash button is pressed. 🔘📡
+> Publish dash button presses to a MQTT broker. 🔘📡
 
 Based on [node-dash-button](https://github.com/hortinstein/node-dash-button) by 
 [Alex Hortin](https://github.com/hortinstein) - all credits belong to him.
