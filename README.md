@@ -68,6 +68,12 @@ publish.
 * As long as the LED of the dash button is blinking you can't do further button presses.
 
 
+## Binding To Specific Network Interface 
+
+By default this tool binds to the first network interface. To bind to a specific interface, such as eth6, pass the name 
+of the interface with the `--interface` option.
+
+
 ## Command line options
 
 ``` 
