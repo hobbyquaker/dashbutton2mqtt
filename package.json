@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "xo"
+    "test": "camo-purge; xo"
   },
   "author": "Sebastian Raff (https://github.com/hobbyquaker)",
   "license": "MIT",
@@ -24,6 +24,10 @@
   "devDependencies": {
     "camo-purge": "latest",
     "xo": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hobbyquaker/dashbutton2mqtt"
   },
   "xo": {
     "space": 4
