@@ -77,7 +77,7 @@ Options:
                                                                [default: "info"]
   -s, --scan       scan for dash buttons
   -m, --mapping    json file containing dashbutton-mqtt mappings (see Readme)
-         [default: "/Users/basti/WebstormProjects/dashbutton2mqtt/example.json"]
+                                                       [default: "example.json"]
   -n, --name       instance name. used as mqtt client id and as prefix for
                    connection topic                      [default: "dashbutton"]
   -u, --url        mqtt broker url. See
