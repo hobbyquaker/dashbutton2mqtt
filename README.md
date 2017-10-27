@@ -71,8 +71,8 @@ publish.
 
 ## Binding To Specific Network Interface 
 
-By default this tool binds to the first network interface. To bind to a specific interface, such as eth6, pass the name 
-of the interface with the `--interface` option.
+By default this tool binds to the first network interface. To bind to a specific interface, such as `eth1`, pass the 
+name of the interface with the `--interface` option.
 
 
 ## Adjusting the Timeout 
@@ -108,7 +108,7 @@ Options:
 
 ## Run as service
 
-I suggest [PM2](https://github.com/Unitech/pm2) to run dashbutton2mqtt in the background and start on system boot.
+I suggest [PM2](https://github.com/Unitech/pm2) to run _dashbutton2mqtt_ in the background and start on system boot.
 
 
 ## Contributions
