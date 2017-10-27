@@ -14,7 +14,9 @@
     "mqtt": "^2.13.1",
     "node-dash-button": "^0.6.1",
     "yalm": "^4.1.0",
-    "yargs": "^10.0.3"
+    "yargs": "^10.0.3",
+    "pcap": "git+https://github.com/mranney/node_pcap.git#d920204745c8b00ef4b7a3fe27d902b263cdb70f"
+
   },
   "devDependencies": {
     "camo-purge": "latest",
