@@ -6,7 +6,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![License][mit-badge]][mit-url]
 
-> Publish on MQTT when a dash button is pressed.
+> Publish on MQTT when a dash button is pressed. 🔘📡
 
 Based on [node-dash-button](https://github.com/hortinstein/node-dash-button) by 
 [Alex Hortin](https://github.com/hortinstein) - all credits belong to him.
@@ -15,13 +15,9 @@ Based on [node-dash-button](https://github.com/hortinstein/node-dash-button) by
 ## Getting started
 
 Tested on macOS and Linux. If you're running on Linux you have to install libpcap-dev:
-```
-# Ubuntu, Debian, Raspbian, ...
-sudo apt-get install libpcap-dev
 
-# Fedora, CentOS
-sudo yum install libpcap-devel
-```
+* Ubuntu, Debian, Raspbian, ... `$ sudo apt-get install libpcap-dev`
+* Fedora, CentOS `$ sudo yum install libpcap-devel`
 
 #### Install
 
@@ -33,7 +29,7 @@ Node.js.
 
 #### Find dash buttons
 
-```sudo dashbutton2mqtt --scan```
+`$ sudo dashbutton2mqtt --scan`
 
 The scan shows only MAC Addresses that are known to be registered by Amazon. If you want to see all detected addresses
 add the option `-v debug`.
@@ -60,7 +56,7 @@ If you omit the payload attribute an empty string will be published.
 
 #### Start 
 
-```sudo dashbutton2mqtt -m /path/to/mapping.json```  
+`$ sudo dashbutton2mqtt -m /path/to/mapping.json`
 
 
 #### Caveats
